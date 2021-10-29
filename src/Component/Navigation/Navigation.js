@@ -8,7 +8,7 @@ const Navigation = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="success" variant="light" sticky="top">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" sticky="top">
 
                 <Container>
 
