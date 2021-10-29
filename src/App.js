@@ -6,6 +6,7 @@ import AuthProvider from './Context/AuthProvider';
 import Navigation from './Component/Navigation/Navigation';
 import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
+import AddService from './Component/AddService/AddService';
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
             <Route path="/login">
               <Navigation></Navigation>
               <Login></Login>
+              <Footer></Footer>
+            </Route>
+            <Route path="/addService">
+              <Navigation></Navigation>
+              <AddService></AddService>
               <Footer></Footer>
             </Route>
           </Switch>
