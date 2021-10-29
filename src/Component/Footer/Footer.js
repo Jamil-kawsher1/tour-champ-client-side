@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-dark text-white fixed-bottom">
+            <footer className="bg-dark text-white  " sticky="bottom">
                 <div className='container'>
                     <div className="d-flex justify-content-between">
                         <div className="mt-5 p-3">
@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
 
                         <div className="">
-                            <h4 className="text-start">Office Hour</h4>
+                            <h4 className="text-start mt-1">Office Hour</h4>
                             <div>
                                 <p>
                                     <pre>

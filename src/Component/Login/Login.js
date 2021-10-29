@@ -8,7 +8,7 @@ const Login = () => {
     return (
         <div className="cntr" >
             <div className='d-flex ' styles={{ backgroundImage: `${bg}` }}>
-                <div className="container input-group cntr">
+                <div className="container input-group cntr ">
                     <div className="card padding-card shadow sm-w-50 mx-auto  w-100" >
 
                         <div className="card-body p-3">

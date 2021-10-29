@@ -10,7 +10,7 @@ const Navigation = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" sticky="top">
 
-                <Container>
+                <Container className="sticky-top">
 
                     <Navbar.Brand className=" sm-text-center text-start"><Link to="/" className='linkstye text-white'> <span className="ml-5"> Tour Champ</span></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
