@@ -7,6 +7,7 @@ import Navigation from './Component/Navigation/Navigation';
 import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
 import AddService from './Component/AddService/AddService';
+import Services from './Component/Services/Services';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route exact path='/'>
               <Navigation></Navigation>
               <Header></Header>
+              <Services></Services>
               <Footer></Footer>
             </Route>
             <Route path="/login">
