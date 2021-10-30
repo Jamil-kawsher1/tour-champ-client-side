@@ -26,7 +26,19 @@ const Order = () => {
             useremail: e.Email,
             time: e.Time,
         }
-        const fOrderData = { ...singleService, ...orderData };
+        const singleServicedata = {
+            name: singleService.name,
+            img: singleService.img,
+            price: singleService.price,
+            description: singleService.description,
+            duration: singleService.duration,
+            rating: singleService.rating,
+
+
+
+
+        }
+        const fOrderData = { ...singleServicedata, ...orderData };
         console.log(fOrderData);
 
 

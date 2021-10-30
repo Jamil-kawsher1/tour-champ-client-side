@@ -1,0 +1,14 @@
+.imgcollage {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .col-lg-6{
+    display:grid;
+    /* declares how many columns there will automaticaly be and how big they will be +rows and how big of a gap between them*/
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px;
+    grid-gap: 15px;
+  }

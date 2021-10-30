@@ -9,6 +9,9 @@ import Header from './Component/Header/Header';
 import AddService from './Component/AddService/AddService';
 import Services from './Component/Services/Services';
 import Order from './Component/Order/Order';
+import Myorders from './Component/MyOders/Myorders';
+import SingleOrder from './Component/MyOders/SingleOrder';
+import Photogallery from './Component/PhotoGallery/Photogallery';
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
               <Navigation></Navigation>
               <Header></Header>
               <Services></Services>
+
 
               <Footer></Footer>
             </Route>
@@ -36,6 +40,12 @@ function App() {
 
             <Route path="/placeorder/:id">
               <Order></Order>
+            </Route>
+            <Route path="/myorder">
+              <Myorders></Myorders>
+            </Route>
+            <Route path="/photogallary">
+              <Photogallery></Photogallery>
             </Route>
           </Switch>
 
