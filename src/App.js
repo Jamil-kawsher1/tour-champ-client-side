@@ -8,6 +8,7 @@ import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
 import AddService from './Component/AddService/AddService';
 import Services from './Component/Services/Services';
+import Order from './Component/Order/Order';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Navigation></Navigation>
               <Header></Header>
               <Services></Services>
+              <Order></Order>
               <Footer></Footer>
             </Route>
             <Route path="/login">

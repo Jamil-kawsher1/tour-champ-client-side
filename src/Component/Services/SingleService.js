@@ -15,8 +15,17 @@ const SingleService = (props) => {
 
                     {/* <h6 className='text-danger'>{level}</h6> */}
                     <Card.Body className='text-center'>
-                        <Card.Title className='text-center'>{name}</Card.Title>
+                        <Card.Title className='text-center '><span className="text-primary"><i class="fas fa-map-marked-alt"></i>
+                        </span>  {name}
 
+
+                        </Card.Title>
+                        <p>{duration} Days <i class="fas fa-calendar-day"></i></p>
+                        <p className="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i> <span className="text-dark">({rating})</span>
+
+
+                        </p>
                         <h4 className='text-primary'>{price}$</h4>
 
                         <Card.Text>
@@ -24,7 +33,7 @@ const SingleService = (props) => {
                         </Card.Text>
 
                         <Link to={`/details/${_id}`}>
-                            <button className="btn btn-outline-danger">Details</button>
+                            <button className="btn btn-outline-danger">BOOK NOW</button>
                         </Link>
                     </Card.Body>
                 </Card>
