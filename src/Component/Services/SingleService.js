@@ -32,7 +32,7 @@ const SingleService = (props) => {
                             {description.slice(0, 50) + '.....'}
                         </Card.Text>
 
-                        <Link to={`/details/${_id}`}>
+                        <Link to={`/placeorder/${_id}`}>
                             <button className="btn btn-outline-danger">BOOK NOW</button>
                         </Link>
                     </Card.Body>

@@ -20,7 +20,7 @@ function App() {
               <Navigation></Navigation>
               <Header></Header>
               <Services></Services>
-              <Order></Order>
+
               <Footer></Footer>
             </Route>
             <Route path="/login">
@@ -32,6 +32,10 @@ function App() {
               <Navigation></Navigation>
               <AddService></AddService>
               <Footer></Footer>
+            </Route>
+
+            <Route path="/placeorder/:id">
+              <Order></Order>
             </Route>
           </Switch>
 

@@ -2,9 +2,27 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     border: 2px solid #e7e7e7;
- 
-    border-radius: 4px;
-    padding: .5rem;
 
+    border-radius: 4px;
+    padding: 30px;
     margin: 10%;
+}
+
+
+.palceorder form{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.palceorder form input{
+    width:60%;
+    margin-bottom: 10px;
+}
+
+.palceorder  textarea{
+    width: 60%;
+    margin-bottom: 10px;
 }
