@@ -20,7 +20,7 @@ const Navigation = () => {
                             <Nav.Link ><Link to='/doctors' className='linkstye text-white'>About</Link></Nav.Link>
 
                             <Nav.Link > <Link to='/contact' className='linkstye text-white'>Contact US</Link></Nav.Link>
-
+                            {user.email && <Nav.Link > <Link to='/myorder' className='linkstye text-white'>My orders</Link></Nav.Link>}
 
 
                         </Nav>

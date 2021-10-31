@@ -11,7 +11,8 @@ import Services from './Component/Services/Services';
 import Order from './Component/Order/Order';
 import Myorders from './Component/MyOders/Myorders';
 import SingleOrder from './Component/MyOders/SingleOrder';
-import Photogallery from './Component/PhotoGallery/Photogallery';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+
 
 function App() {
   return (
@@ -37,16 +38,14 @@ function App() {
               <AddService></AddService>
               <Footer></Footer>
             </Route>
-
-            <Route path="/placeorder/:id">
+            <PrivateRoute path="/placeorder/:id">
               <Order></Order>
-            </Route>
-            <Route path="/myorder">
+            </PrivateRoute>
+            <PrivateRoute path="/myorder">
               <Myorders></Myorders>
-            </Route>
-            <Route path="/photogallary">
-              <Photogallery></Photogallery>
-            </Route>
+            </PrivateRoute>
+
+
           </Switch>
 
         </BrowserRouter>

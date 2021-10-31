@@ -3,8 +3,15 @@ import login from '../../Img/login1.png'
 import bg from '../../Img/logback.jpg'
 import './Login.css'
 import useAuth from '../../hook/useAuth';
+import { useHistory, useLocation } from 'react-router';
 const Login = () => {
-    const { SignInWithGoogle } = useAuth()
+    const { SignInWithGoogle, user } = useAuth()
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location?.state?.from || '/';
+    if (user.email) {
+        history.push(redirect_url);
+    }
     return (
         <div className="cntr" >
             <div className='d-flex ' styles={{ backgroundImage: `${bg}` }}>
