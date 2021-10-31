@@ -4,8 +4,8 @@ const PhotoGallary = () => {
     return (
         <div>
 
-            <div className="row">
-
+            <div className="row mb-5">
+                <h1>PhotoGallary</h1>
 
                 <div className="column">
                     <img src="https://cdn.pixabay.com/photo/2021/08/30/21/29/port-6587129_960_720.jpg" alt="" />

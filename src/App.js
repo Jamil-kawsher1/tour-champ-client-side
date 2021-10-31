@@ -13,6 +13,7 @@ import Myorders from './Component/MyOders/Myorders';
 import SingleOrder from './Component/MyOders/SingleOrder';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import PhotoGallary from './Component/PhotoGallery/PhotoGallary';
+import TopTravel from './Component/TopTravel/TopTravel';
 
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
               <Navigation></Navigation>
               <Header></Header>
               <Services></Services>
-
-
+              <PhotoGallary></PhotoGallary>
+              <TopTravel></TopTravel>
               <Footer></Footer>
             </Route>
             <Route path="/login">
