@@ -1,6 +1,6 @@
 
 img{
-    width: 250px;
+    width: 300px;
 }
 /* .w{
     width: 250px;
@@ -9,12 +9,12 @@ img{
    .cntr{
     /* display: flex; */
     /* justify-content: center; */
-    align-items: center;
-    width: 100%;
+    /* align-items: center;
+    width: 100%; */
     /* margin-top: 15%; */
     /* background-color: blue; */
-    
-    padding: 100px;
+    margin-top: 10%;
+    padding-bottom: 100px;
     margin-bottom: 60px;
     
    }

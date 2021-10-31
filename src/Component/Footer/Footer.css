@@ -1,3 +1,17 @@
 footer{
     padding-bottom: 5px;
 }
+
+@media only screen and (min-width:280px) and (max-width:320px){
+.smm{
+display: none;
+}
+.addm{
+    text-align: center;
+}
+}
+
+@media only screen and (max-width:320px){
+    
+}
+    

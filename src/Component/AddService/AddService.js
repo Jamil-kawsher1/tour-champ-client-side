@@ -22,7 +22,7 @@ const AddService = () => {
             duration: serviceDurationRef.current.value,
             rating: serviceRatingRef.current.value,
         }
-        axios.post('http://localhost:5000/addService', newservice)
+        axios.post('https://wicked-witch-66162.herokuapp.com/addService', newservice)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Added Successfully");

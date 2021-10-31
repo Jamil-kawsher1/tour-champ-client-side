@@ -17,11 +17,10 @@ const Navigation = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
                             <Nav.Link ><Link to='/' className='linkstye text-white' >Home</Link></Nav.Link>
-                            <Nav.Link ><Link to='/doctors' className='linkstye text-white'>About</Link></Nav.Link>
 
-                            <Nav.Link > <Link to='/contact' className='linkstye text-white'>Contact US</Link></Nav.Link>
                             {user.email && <Nav.Link > <Link to='/myorder' className='linkstye text-white'>My orders</Link></Nav.Link>}
                             {user.email && <Nav.Link > <Link to='/addService' className='linkstye text-white'>Add new Service</Link></Nav.Link>}
+                            {user.email && <Nav.Link > <Link to='/manageorder' className='linkstye text-white'>Manage orders</Link></Nav.Link>}
 
 
                         </Nav>

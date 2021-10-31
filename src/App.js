@@ -15,6 +15,7 @@ import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import PhotoGallary from './Component/PhotoGallery/PhotoGallary';
 import TopTravel from './Component/TopTravel/TopTravel';
 import ManageOrder from './Component/MangeOrder/ManageOrder';
+import NotFound from './Component/NotFound/NotFound';
 
 
 function App() {
@@ -22,45 +23,48 @@ function App() {
     <div className="App">
       <AuthProvider>
         <BrowserRouter>
+          <Navigation></Navigation>
           <Switch>
             <Route exact path='/'>
-              <Navigation></Navigation>
+
               <Header></Header>
               <Services></Services>
               <PhotoGallary></PhotoGallary>
               <TopTravel></TopTravel>
-              <Footer></Footer>
+
             </Route>
             <Route path="/login">
-              <Navigation></Navigation>
+
               <Login></Login>
-              <Footer></Footer>
+
             </Route>
 
             <PrivateRoute path="/placeorder/:id">
+
               <Order></Order>
+
             </PrivateRoute>
             <PrivateRoute path="/myorder">
-              <Navigation></Navigation>
+
               <Myorders></Myorders>
-              <Footer></Footer>
+
             </PrivateRoute>
             <PrivateRoute path="/addService">
-              <Navigation></Navigation>
+
               <AddService></AddService>
-              <Footer></Footer>
+
             </PrivateRoute>
-            <Route path="/photogallary">
-              <PhotoGallary></PhotoGallary>
-            </Route>
-            <Route path="/manageorder">
-              <Navigation></Navigation>
+
+            <PrivateRoute path="/manageorder">
+
               <ManageOrder></ManageOrder>
-              <Footer></Footer>
+
+            </PrivateRoute>
+            <Route path='*'>
+              <NotFound></NotFound>
             </Route>
-
           </Switch>
-
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>

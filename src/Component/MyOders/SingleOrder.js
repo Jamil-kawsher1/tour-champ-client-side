@@ -13,7 +13,7 @@ const SingleOrder = (props) => {
         console.log("cnacel cliked", id)
         const del = window.confirm("Are You Sure you Want to Cancel");
         if (del) {
-            const url = `http://localhost:5000/deleteorder/${id}`;
+            const url = `https://wicked-witch-66162.herokuapp.com/deleteorder/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -26,7 +26,7 @@ const SingleOrder = (props) => {
         }
     }
     return (
-        <div className=" container mt-3">
+        <div className=" container mt-3 mb-5">
             <div className="product myorder">
                 <div>
                     <img className="img-fluid" src={img} alt="" />

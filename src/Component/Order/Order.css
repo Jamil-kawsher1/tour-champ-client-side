@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.palceorder form input{
+.palceorder form input {
     width:60%;
     margin-bottom: 10px;
 }
@@ -25,4 +25,8 @@
 .palceorder  textarea{
     width: 60%;
     margin-bottom: 10px;
+}
+.butt{
+    width:60%;
+    margin-bottom: 10px; 
 }

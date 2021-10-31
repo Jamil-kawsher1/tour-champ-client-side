@@ -1,13 +1,13 @@
 import React from 'react';
-
+import './Footer.css'
 const Footer = () => {
     return (
-        <div>
-            <footer className="bg-dark text-white  " sticky="bottom">
+        <div className="fooa">
+            <footer className="bg-dark text-white  ">
                 <div className='container'>
                     <div className="d-flex justify-content-between">
                         <div className="mt-5 p-3">
-                            <h4 className="text-start mt-3"> <i className="fas fa-address-card"></i> <span>Address</span></h4>
+                            <h4 className="text-start mt-3 addm"> <i className="fas fa-address-card"></i> <span>Address</span></h4>
                             <small className="text-start"><i class="fas fa-map-marker-alt"></i>
 
                                 <span> Mohammadpur Dhaka 1207</span></small>
@@ -22,8 +22,8 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="">
-                            <h4 className="text-start mt-1">Office Hour</h4>
+                        <div className="smm">
+                            <h4 className="text-start mt-1 smm">Office Hour</h4>
                             <div>
                                 <p>
                                     <pre>

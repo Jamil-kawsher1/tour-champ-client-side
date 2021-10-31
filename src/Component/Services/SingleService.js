@@ -29,7 +29,7 @@ const SingleService = (props) => {
                         <h4 className='text-primary'>{price}$</h4>
 
                         <Card.Text>
-                            {description.slice(0, 50) + '.....'}
+                            {description.slice(0, 80) + '.....'}
                         </Card.Text>
 
                         <Link to={`/placeorder/${_id}`}>
