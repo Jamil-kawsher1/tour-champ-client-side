@@ -1,14 +1,34 @@
-.imgcollage {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  .col-lg-6{
-    display:grid;
-    /* declares how many columns there will automaticaly be and how big they will be +rows and how big of a gap between them*/
-    grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px;
-    grid-gap: 15px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}

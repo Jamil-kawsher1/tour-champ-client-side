@@ -12,6 +12,7 @@ import Order from './Component/Order/Order';
 import Myorders from './Component/MyOders/Myorders';
 import SingleOrder from './Component/MyOders/SingleOrder';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import PhotoGallary from './Component/PhotoGallery/PhotoGallary';
 
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
             <PrivateRoute path="/myorder">
               <Myorders></Myorders>
             </PrivateRoute>
-
+            <Route path="/photogallary">
+              <PhotoGallary></PhotoGallary>
+            </Route>
 
           </Switch>
 
