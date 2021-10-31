@@ -14,6 +14,7 @@ import SingleOrder from './Component/MyOders/SingleOrder';
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import PhotoGallary from './Component/PhotoGallery/PhotoGallary';
 import TopTravel from './Component/TopTravel/TopTravel';
+import ManageOrder from './Component/MangeOrder/ManageOrder';
 
 
 function App() {
@@ -35,19 +36,27 @@ function App() {
               <Login></Login>
               <Footer></Footer>
             </Route>
-            <Route path="/addService">
-              <Navigation></Navigation>
-              <AddService></AddService>
-              <Footer></Footer>
-            </Route>
+
             <PrivateRoute path="/placeorder/:id">
               <Order></Order>
             </PrivateRoute>
             <PrivateRoute path="/myorder">
+              <Navigation></Navigation>
               <Myorders></Myorders>
+              <Footer></Footer>
+            </PrivateRoute>
+            <PrivateRoute path="/addService">
+              <Navigation></Navigation>
+              <AddService></AddService>
+              <Footer></Footer>
             </PrivateRoute>
             <Route path="/photogallary">
               <PhotoGallary></PhotoGallary>
+            </Route>
+            <Route path="/manageorder">
+              <Navigation></Navigation>
+              <ManageOrder></ManageOrder>
+              <Footer></Footer>
             </Route>
 
           </Switch>

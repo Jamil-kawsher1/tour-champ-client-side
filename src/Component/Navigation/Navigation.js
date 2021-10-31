@@ -21,6 +21,7 @@ const Navigation = () => {
 
                             <Nav.Link > <Link to='/contact' className='linkstye text-white'>Contact US</Link></Nav.Link>
                             {user.email && <Nav.Link > <Link to='/myorder' className='linkstye text-white'>My orders</Link></Nav.Link>}
+                            {user.email && <Nav.Link > <Link to='/addService' className='linkstye text-white'>Add new Service</Link></Nav.Link>}
 
 
                         </Nav>
