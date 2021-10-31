@@ -12,7 +12,7 @@ const ManageOrder = () => {
             .then(data => setAllorder(data));
     }, [allorder])
     const handleCancel = id => {
-        const del = window.confirm("Are You Sure you Want to Cancel");
+        const del = window.confirm("Are You Sure you Want to Delete?");
         if (del) {
             const url = `https://wicked-witch-66162.herokuapp.com/deleteorder/${id}`;
             fetch(url, {
@@ -20,7 +20,7 @@ const ManageOrder = () => {
             })
                 .then(async res => {
                     if (res.status == 200) {
-                        alert("cancaled Successfully");
+                        alert("Deleted Successfully");
 
                     }
                 });

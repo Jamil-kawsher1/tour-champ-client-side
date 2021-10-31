@@ -11,7 +11,7 @@ const SingleOrder = (props) => {
 
     const handleCancel = id => {
         console.log("cnacel cliked", id)
-        const del = window.confirm("Are You Sure you Want to Cancel");
+        const del = window.confirm("Are You Sure you Want to Cancel?");
         if (del) {
             const url = `https://wicked-witch-66162.herokuapp.com/deleteorder/${id}`;
             fetch(url, {
@@ -19,7 +19,7 @@ const SingleOrder = (props) => {
             })
                 .then(async res => {
                     if (res.status == 200) {
-                        alert("cancaled Successfully");
+                        alert("Cancelled  Successfully");
                         refress();
                     }
                 });

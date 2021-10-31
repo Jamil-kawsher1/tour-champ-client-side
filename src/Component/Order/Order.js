@@ -9,6 +9,7 @@ import { Button } from 'react-bootstrap';
 const Order = () => {
     const { user } = useAuth();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
     // console.log(user);
     const { id } = useParams();
     // console.log(id);
@@ -26,7 +27,8 @@ const Order = () => {
             username: e.Name,
             useremail: e.Email,
             time: e.Time,
-            orderstatus: "Pending"
+            orderstatus: "Pending",
+            address: e.Address,
         }
         const singleServicedata = {
             name: singleService.name,
@@ -49,6 +51,7 @@ const Order = () => {
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Order Placed SuccessFully");
+                    history.push('/myorder')
 
 
                 }
@@ -66,6 +69,7 @@ const Order = () => {
                 <input type="text" placeholder="Name" {...register("Name", { required: false, maxLength: 80 })} value={user.displayName} />
                 <input type="text" placeholder="Tour Duration" {...register("Duration", { required: false, maxLength: 80 })} value={singleService.duration + " Days"} />
                 <input type="text" placeholder="Email" {...register("Email", { required: false, pattern: /^\S+@\S+$/i })} value={user.email} />
+                <input type="text" placeholder="Enter your address" {...register("Address", { required: false, maxLength: 80 })} />
                 <input type="date" placeholder="Time" {...register("Time", { required: true })} />
                 <input type="text" placeholder="Price" {...register("Price", {})} value={singleService.price + " $"} />
 
